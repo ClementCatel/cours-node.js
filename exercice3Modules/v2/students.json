@@ -1,0 +1,47 @@
+[
+  {
+    "firstname": "Jean",
+    "lastname": "Dupont",
+    "age": 20
+  },
+  {
+    "firstname": "Sophie",
+    "lastname": "Martin",
+    "age": 21
+  },
+  {
+    "firstname": "Pierre",
+    "lastname": "Bernard",
+    "age": 22
+  },
+  {
+    "firstname": "Jean",
+    "lastname": "Dupont",
+    "age": 20
+  },
+  {
+    "firstname": "Sophie",
+    "lastname": "Martin",
+    "age": 21
+  },
+  {
+    "firstname": "Pierre",
+    "lastname": "Bernard",
+    "age": 22
+  },
+  {
+    "firstname": "Jean",
+    "lastname": "Dupont",
+    "age": 20
+  },
+  {
+    "firstname": "Sophie",
+    "lastname": "Martin",
+    "age": 21
+  },
+  {
+    "firstname": "Pierre",
+    "lastname": "Bernard",
+    "age": 22
+  }
+]

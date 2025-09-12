@@ -6,13 +6,11 @@ import {
 	loadStudents,
 } from './students.js'
 
-// Initialize readline interface
 const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
 })
 
-// Load students on startup
 await loadStudents('students.json')
 console.log('Welcome to the student manager!')
 
@@ -41,10 +39,10 @@ async function handleMenu() {
 		try {
 			switch (choice) {
 				case '1':
-					await addStudentInteractive()
+					await addStudentCli()
 					break
 				case '2':
-					listStudentsInteractive()
+					listStudentsCli()
 					break
 				case '3':
 					await saveStudents('students.json')
@@ -60,10 +58,7 @@ async function handleMenu() {
 	}
 }
 
-/**
- * Adds a student interactively.
- */
-async function addStudentInteractive() {
+async function addStudentCli() {
 	const lastName = await askQuestion("Student's last name: ")
 	const firstName = await askQuestion("Student's first name: ")
 	const age = await askQuestion("Student's age: ")
@@ -76,10 +71,7 @@ async function addStudentInteractive() {
 	}
 }
 
-/**
- * Lists all students interactively.
- */
-function listStudentsInteractive() {
+function listStudentsCli() {
 	const studentList = listStudents()
 	if (studentList.length === 0) {
 		console.log('No students registered.')
@@ -101,7 +93,6 @@ function askQuestion(question) {
 	})
 }
 
-// Start the application
 handleMenu().finally(() => {
 	rl.close()
 })
